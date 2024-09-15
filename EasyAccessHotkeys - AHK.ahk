@@ -102,14 +102,9 @@ SetCapsLockState, AlwaysOff
             Send, #{Up}
         }
         Return
-    a Up::  ; Open ChatGPT.
-        path := "https://chat.openai.com/"
-        windowTitle := "ChatGPT - Google Chrome"
-        OpenPath(path, windowTitle)
-        Return
-    i & g Up::  ; Open Instagram.
-        path := "https://www.instagram.com/"
-        windowTitle := "Instagram - Google Chrome"
+    w & s Up::  ; Open Whatsapp.
+        path := "https://web.whatsapp.com/"
+        windowTitle := "WhatsApp - Google Chrome"
         OpenPath(path, windowTitle)
         Return
     f & b Up::  ; Open Facebook.
@@ -117,9 +112,44 @@ SetCapsLockState, AlwaysOff
         windowTitle := "Facebook - Google Chrome"
         OpenPath(path, windowTitle)
         Return
-    w & s Up::  ; Open Whatsapp.
+    i & g Up::  ; Open Instagram.
+        path := "https://www.instagram.com/"
+        windowTitle := "Instagram - Google Chrome"
+        OpenPath(path, windowTitle)
+        Return
+    o & l Up::  ; Open Outlook.
+        path := "https://outlook.office.com/mail/"
+        windowTitle := "Outlook - Google Chrome"
+        OpenPath(path, windowTitle)
+        Return
+    m & s Up::  ; Open Microsoft Teams.
+        path := "https://teams.microsoft.com/v2/"
+        windowTitle := "Teams and Channels | Microsoft Teams - Google Chrome"
+        OpenPath(path, windowTitle)
+        Return
+    t & i Up::  ; Open Twitter.
+        path := "https://twitter.com/home"
+        windowTitle := "Home / X - Google Chrome"
+        OpenPath(path, windowTitle)
+        Return
+    f & c Up::  ; Open all tabs for fast check news + messages.
         path := "https://web.whatsapp.com/"
         windowTitle := "WhatsApp - Google Chrome"
+        OpenPath(path, windowTitle)
+        path := "https://outlook.office.com/mail/"
+        windowTitle := "Outlook - Google Chrome"
+        OpenPath(path, windowTitle)
+        path := "https://teams.microsoft.com/v2/"
+        windowTitle := "Teams and Channels | Microsoft Teams - Google Chrome"
+        OpenPath(path, windowTitle)
+        path := "https://www.facebook.com/"
+        windowTitle := "Facebook - Google Chrome"
+        OpenPath(path, windowTitle)
+        path := "https://www.instagram.com/"
+        windowTitle := "Instagram - Google Chrome"
+        OpenPath(path, windowTitle)
+        path := "https://twitter.com/home"
+        windowTitle := "Home / X - Google Chrome"
         OpenPath(path, windowTitle)
         Return
     y & t Up::  ; Open Youtube.
@@ -137,23 +167,14 @@ SetCapsLockState, AlwaysOff
         windowTitle := "ahk_exe chrome.exe"
         OpenPath(path, windowTitle)
         Return
-    o & l Up::  ; Open Outlook.
-        path := "https://outlook.office.com/mail/"
-        windowTitle := "Outlook - Google Chrome"
+    a Up::  ; Open ChatGPT.
+        path := "https://chat.openai.com/"
+        windowTitle := "ChatGPT - Google Chrome"
         OpenPath(path, windowTitle)
         Return
     t & l Up::  ; Open Telegram.
         path := "https://web.telegram.org/a/#1301490763"
         windowTitle := "Telegram - Google Chrome"
-        OpenPath(path, windowTitle)
-        Return
-    v Up::  ; Open apps for programming life session.
-        path := "C:\Users\Admin\AppData\Local\Programs\Microsoft VS Code\Code.exe"
-        windowTitle := "Visual Studio Code"
-        OpenPath(path, windowTitle) 
-        ;open clock and set time to 30 min and start.
-        path := "C:\Users\Admin\Desktop\Programming Life Record.txt"
-        windowTitle := "Programming Life Record.txt - Notepad"
         OpenPath(path, windowTitle)
         Return
     q Up::  ; Open apps for language cottage session.
