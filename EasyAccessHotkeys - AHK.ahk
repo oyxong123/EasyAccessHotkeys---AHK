@@ -9,7 +9,7 @@ SetCapsLockState, AlwaysOff
 #If GetKeyState("CapsLock", "P")
     p Up::  ; Open Programming Life squared images directory of today.
         path := "C:\Users\Admin\Desktop\Programming Life"
-        OpenTodaySquaredPath(path)
+        OpenTodayPath(path)
         Return
     +p Up::  ; Open Programming Life Record.txt.
         path := "C:\Users\Admin\Desktop\Programming Life Record.txt"
