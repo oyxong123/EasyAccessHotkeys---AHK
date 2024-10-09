@@ -151,6 +151,9 @@ SetCapsLockState, AlwaysOff
         path := "https://twitter.com/home"
         windowTitle := "Home / X - Google Chrome"
         OpenPath(path, windowTitle)
+        path := "https://mail.google.com/mail/"
+        windowTitle := "Gmail - Google Chrome"
+        OpenPath(path, windowTitle)
         Return
     y & t Up::  ; Open Youtube.
         path := "https://www.youtube.com/"
@@ -165,6 +168,11 @@ SetCapsLockState, AlwaysOff
     c & r Up::  ; Open Chrome.
         path := "C:\Program Files\Google\Chrome\Application\chrome.exe"
         windowTitle := "ahk_exe chrome.exe"
+        OpenPath(path, windowTitle)
+        Return
+    g & m Up::  ; Open Gmail.
+        path := "https://mail.google.com/mail/"
+        windowTitle := "Gmail - Google Chrome"
         OpenPath(path, windowTitle)
         Return
     a Up::  ; Open ChatGPT.
