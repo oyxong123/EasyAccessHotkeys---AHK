@@ -45,10 +45,9 @@ SetCapsLockState, AlwaysOff
         WinWaitActive, %windowTitle%
         Send, ^{End}
         Return
-    b Up::  ; Open Bookshelf directory.
-        path := "C:\Users\Admin\Desktop\Bookshelf"
-        windowTitle := "Bookshelf"
-        OpenPath(path, windowTitle)
+    a Up::  ; Open Artwork Room directory.
+        path := "C:\Users\Admin\Desktop\Artwork Room"
+        OpenTodayPath(path)
         Return
     t Up::  ; Open Utp Life directory.
         path := "C:\Users\Admin\Desktop\utp degree\Utp Life"
@@ -83,15 +82,15 @@ SetCapsLockState, AlwaysOff
         WinWaitActive, %windowTitle%
         Send, ^{End}
         Return
-    c Up::  ; Open Clock.
-        Send, {CapsLock Up}
-        send, {lwin down}
-        sleep, 100
-        send, {lwin up}
-        sleep, 300
-        ControlSend, DirectUIHWND1, test, Start menu
-        ; Send, {Enter}
-        Return
+    ; c Up::  ; Open Clock.
+    ;     Send, {CapsLock Up}
+    ;     send, {lwin down}
+    ;     sleep, 100
+    ;     send, {lwin up}
+    ;     sleep, 300
+    ;     ControlSend, DirectUIHWND1, test, Start menu
+    ;     ; Send, {Enter}
+    ;     Return
     e Up::  ; Open Personal Things to Keep Track excel file.
         path := "C:\Users\Admin\Desktop\Personal Things to Keep Track.xlsm"
         windowTitle := "Personal Things to Keep Track.xlsm - Excel"
@@ -175,7 +174,7 @@ SetCapsLockState, AlwaysOff
         windowTitle := "Gmail - Google Chrome"
         OpenPath(path, windowTitle)
         Return
-    a Up::  ; Open ChatGPT.
+    c Up::  ; Open ChatGPT.
         path := "https://chat.openai.com/"
         windowTitle := "ChatGPT - Google Chrome"
         OpenPath(path, windowTitle)
