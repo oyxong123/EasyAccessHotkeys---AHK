@@ -16,7 +16,6 @@ SetCapsLockState, AlwaysOff
         windowTitle := "Programming Life Record.txt - Notepad"
         OpenPath(path, windowTitle)
         WinWaitActive, %windowTitle%
-        Send, ^{End}
         Return
     l Up::  ; Open Language Cottage directory.
         path := "C:\Users\Admin\Desktop\Language Cottage"
@@ -185,8 +184,8 @@ SetCapsLockState, AlwaysOff
         OpenPath(path, windowTitle)
         Return
     q Up::  ; Open apps for language cottage session.
-        path := "C:\Users\Admin\Desktop\Sora No Kiseki 3rd Translation_12.docx"
-        windowTitle := "Sora No Kiseki 3rd Translation_12.docx - Word"
+        path := "C:\Users\Admin\Desktop\Sora No Kiseki 3rd Translation_13.docx"
+        windowTitle := "Sora No Kiseki 3rd Translation_13.docx - Word"
         OpenPath(path, windowTitle) 
         WinWait, windowTitle,,10
         if WinActive(windowTitle)
