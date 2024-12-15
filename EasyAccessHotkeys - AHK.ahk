@@ -152,6 +152,10 @@ SetCapsLockState, AlwaysOff
         path := "https://mail.google.com/mail/"
         windowTitle := "Gmail - Google Chrome"
         OpenPath(path, windowTitle)
+        path := "C:\Users\Admin\Desktop\Utilities\One Calendar"
+        windowTitle := "One Calendar"
+        OpenPath(path, windowTitle)
+        Return
         Return
     y & t Up::  ; Open Youtube.
         path := "https://www.youtube.com/"
@@ -173,7 +177,17 @@ SetCapsLockState, AlwaysOff
         windowTitle := "Gmail - Google Chrome"
         OpenPath(path, windowTitle)
         Return
-    c Up::  ; Open ChatGPT.
+    c Up::  ; Open One Calendar.
+        path := "C:\Users\Admin\Desktop\Utilities\One Calendar"
+        windowTitle := "One Calendar"
+        OpenPath(path, windowTitle)
+        Return
+    n Up::  ; Open Samsung Notes.
+        path := "C:\Users\Admin\\Desktop\Utilities\Samsung Notes"
+        windowTitle := "Samsung Notes"
+        OpenPath(path, windowTitle) 
+        Return
+    c & h Up::  ; Open ChatGPT.
         path := "https://chat.openai.com/"
         windowTitle := "ChatGPT - Google Chrome"
         OpenPath(path, windowTitle)
