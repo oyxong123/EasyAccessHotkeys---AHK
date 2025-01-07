@@ -187,6 +187,11 @@ SetCapsLockState, AlwaysOff
         windowTitle := "Samsung Notes"
         OpenPath(path, windowTitle) 
         Return
+    p & a Up::  ; Open Powerapps MyTimetable.
+        path := "https://apps.powerapps.com/play/e/cb9a5f19-5979-e480-b742-e25ee619359d/a/a10f246e-4c65-4e01-8923-6fa7f65de051?tenantId=84187be3-037e-41ec-889c-a150fe476432&hint=9b584276-674f-4d79-ad75-ff3381d7139e&sourcetime=1735616167669#"
+        windowTitle := "My Timetable - Power Apps - Google Chrome"
+        OpenPath(path, windowTitle) 
+        Return
     c & h Up::  ; Open ChatGPT.
         path := "https://chat.openai.com/"
         windowTitle := "ChatGPT - Google Chrome"
