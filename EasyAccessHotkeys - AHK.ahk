@@ -26,13 +26,13 @@ SetCapsLockState, AlwaysOff
         path := "C:\Users\Admin\Desktop\Music Square" 
         OpenTodayPath(path)
         Return
-    +m Up::  ; Open Music Square Record.txt.
-        path := "C:\Users\Admin\Desktop\Music Square Record.txt"
-        windowTitle := "Music Square Record.txt - Notepad"
-        OpenPath(path, windowTitle)
-        WinWaitActive, %windowTitle%
-        Send, ^{End}
-        Return
+    ; +m Up::  ; Open Music Square Record.txt.
+    ;     path := "C:\Users\Admin\Desktop\Music Square Record.txt"
+    ;     windowTitle := "Music Square Record.txt - Notepad"
+    ;     OpenPath(path, windowTitle)
+    ;     WinWaitActive, %windowTitle%
+    ;     Send, ^{End}
+    ;     Return
     i Up::  ; Open Life directory.
         path := "C:\Users\Admin\Desktop\Life"
         OpenTodayPath(path)
@@ -48,10 +48,10 @@ SetCapsLockState, AlwaysOff
         path := "C:\Users\Admin\Desktop\Artwork Room"
         OpenTodayPath(path)
         Return
-    t Up::  ; Open Utp Life directory.
-        path := "C:\Users\Admin\Desktop\utp degree\Utp Life"
-        OpenTodayPath(path)
-        Return
+    ; t Up::  ; Open Utp Life directory.
+    ;     path := "C:\Users\Admin\Desktop\utp degree\Utp Life"
+    ;     OpenTodayPath(path)
+    ;     Return
     o Up::  ; Open Precious Moments directory.
         path := "C:\Users\Admin\Desktop\Precious Moments"
         windowTitle := "Precious Moments"
@@ -203,15 +203,14 @@ SetCapsLockState, AlwaysOff
         OpenPath(path, windowTitle)
         Return
     q Up::  ; Open apps for language cottage session.
-        path := "C:\Users\Admin\Desktop\Sora No Kiseki 3rd Translation_13.docx"
-        windowTitle := "Sora No Kiseki 3rd Translation_13.docx - Word"
-        OpenPath(path, windowTitle) 
-        WinWait, windowTitle,,10
-        if WinActive(windowTitle)
-        {
-            OpenInSecondMonitor()
-        }
-        ;open clock and set time to 30 min and start.
+        ; path := "C:\Users\Admin\Desktop\Sora No Kiseki 3rd Translation_13.docx"
+        ; windowTitle := "Sora No Kiseki 3rd Translation_13.docx - Word"
+        ; OpenPath(path, windowTitle) 
+        ; WinWait, windowTitle,,10
+        ; if WinActive(windowTitle)
+        ; {
+        ;     OpenInSecondMonitor()
+        ; }
         path := "C:\Program Files\PPSSPP\PPSSPPWindows64.exe"
         windowTitle := "ahk_exe PPSSPPWindows64.exe"
         OpenPath(path, windowTitle)
